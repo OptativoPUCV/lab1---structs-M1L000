@@ -103,6 +103,7 @@ int esMenor(int num, int arr[], int size)
       {
         return 1;
       }
+      num = arr[i];
     }
   return 0;
 }
@@ -114,6 +115,7 @@ int esMayor(int num, int arr[], int size)
       {
         return 1;
       }
+      num = arr[i];
     }
   return 0;
 }

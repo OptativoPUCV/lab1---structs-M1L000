@@ -97,7 +97,7 @@ y luego devuelva 1 si el arreglo está ordenado en orden ascendente,
 
 int esMenor(int num, int arr[], int size)
 {
-  for(int i = 0; i < size; i++)
+  for(int i = 1; i < size; i++)
     {
       if(num > arr[i])
       {
@@ -108,7 +108,7 @@ int esMenor(int num, int arr[], int size)
 }
 int esMayor(int num, int arr[], int size)
 {
-  for(int i = 0; i < size; i++)
+  for(int i = 1; i < size; i++)
     {
       if(num < arr[i])
       {

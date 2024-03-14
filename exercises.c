@@ -99,7 +99,7 @@ int esMenor(int num, int arr[], int size)
 {
   for(int i = 1; i < size; i++)
     {
-      if(num >= arr[i])
+      if(num > arr[i])
       {
         return 1;
       }
@@ -111,7 +111,7 @@ int esMayor(int num, int arr[], int size)
 {
   for(int i = 1; i < size; i++)
     {
-      if(num <= arr[i])
+      if(num < arr[i])
       {
         return 1;
       }

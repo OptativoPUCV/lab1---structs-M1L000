@@ -95,6 +95,7 @@ int checkSorted(int arr[], int size)
       }
     if(arr[0] < arr[1]) return 1;
     else if(arr[0] > arr[1]) return -1;
+  return 0;
 }
 
 /*

@@ -70,14 +70,20 @@ arreglos en un tercer arreglo también ordenado.
 void mergeSortedArrays(int arr1[], int size1, int arr2[], int size2,
                        int result[]) 
 {
-  int size3 = size1 + size2;
-  for(int i = 0; i < size1; i++)
+  int i = 0, j = 0, k = 0;
+  while(i < size1 && j < size2)
     {
-      result[i] = arr1[i];
-    }
-  for(int i = size1; i < size3 - 1; i++)
-    {
-      result[i] = arr2[i - size1];
+      if(arr1[i] < arr2[j])
+      {
+        result[k] = arr1[i];
+        i++;
+      }
+      else
+      {
+        result[k] = arr2[j];
+        j++;
+      }
+      k++;
     }
 }
 

@@ -38,3 +38,12 @@ exercises.c:99:1: error: control reaches end of non-void function [-Werror=retur
 cc1: all warnings being treated as errors
 Compilation failed
 50dbaad
+Thu 14 Mar 2024 08:23:24 PM UTC: 
+In file included from test.c:1:
+exercises.c: In function ‘checkSorted’:
+exercises.c:99:1: error: control reaches end of non-void function [-Werror=return-type]
+   99 | }
+      | ^
+cc1: all warnings being treated as errors
+Compilation failed
+fd38400

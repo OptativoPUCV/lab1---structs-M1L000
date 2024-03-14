@@ -94,19 +94,41 @@ Descripción: Escribe una función que tome un arreglo y su tamaño,
 y luego devuelva 1 si el arreglo está ordenado en orden ascendente,
   0 si no está ordenado, y -1 si está ordenado en orden descendente.
 */
+
+int esMenor(int num, int arr[], int size)
+{
+  for(int i = 0; i < size; i++)
+    {
+      if(num > arr[i])
+      {
+        return 1;
+      }
+    }
+  return 0;
+}
+int esMayor(int num, int arr[], int size)
+{
+  for(int i = 0; i < size; i++)
+    {
+      if(num < arr[i])
+      {
+        return 1;
+      }
+    }
+  return 0;
+}
+
+
 int checkSorted(int arr[], int size) 
 { 
-    for(int i = 0; i < size - 1; i++)
-      {
-        if(arr[i] > arr[i + 1])
-        {
-          return -1;
-        }
-        else if(arr[i] < arr[i + 1])
-        {
-          return 1;
-        }
-      }
+    if(esMenor(arr[0],arr,size) == 0)
+    {
+      return 1;
+    }
+    else if(esMenor(arr[0],arr,size) == 0)
+    {
+      return -1;
+    }
   return 0;
 }
 

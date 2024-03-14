@@ -125,7 +125,7 @@ int checkSorted(int arr[], int size)
     {
       return 1;
     }
-    else if(esMenor(arr[0],arr,size) == 0)
+    else if(esMayor(arr[0],arr,size) == 0)
     {
       return -1;
     }
